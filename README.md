@@ -21,3 +21,5 @@ In order to retrieve some or all of my savings As a bank client I want to make a
 In order to check my operations As a bank client I want to see the history (operation, date, amount, balance) of my operations
 
 # Example of an Output proposed
+
+![](imgRM.PNG)
