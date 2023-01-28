@@ -33,7 +33,6 @@ public class Statement implements Comparable<Statement> {
 		this.balance = balance;
 	}
 
-	@Override
 	public int compareTo(Statement o) {
 		return this.getTransaction().compareTo(o.getTransaction());
 	}

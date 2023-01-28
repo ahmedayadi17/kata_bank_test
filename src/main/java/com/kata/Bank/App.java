@@ -1,5 +1,6 @@
 package com.kata.Bank;
 
+import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
@@ -15,9 +16,12 @@ public class App
 {  
 	 
 	  
-	 
+	
     public static void main( String[] args ) throws InvalidTransactionExceptions, InvalidStatementsExceptions
-    {
+    
+    { 
+    	System.out.println("test1");
+    	BigDecimal bg;
     	BankService bs=new BankService();          
 	    Client client=bs.createClient(12345, "AYADI","ahmed");
 		Account cpt = bs.createAccount(client, Long.valueOf(123898));
@@ -28,5 +32,8 @@ public class App
 		bs.deposit(cpt,LocalDateTime.of(2022, 10, 23, 12, 38), 800, Operation.DEPOSER);
 		bs.printTransaction(op, cpt);
 		bs.getTransactionsHistory(cpt);
+		
+		bg=new BigDecimal(2);
+		System.out.println("currency" + bg.toString());
     }
 }

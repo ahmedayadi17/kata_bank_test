@@ -17,7 +17,7 @@ public class Transaction implements Comparable<Transaction> {
     private Operation type;
     
     
-
+     
 
 
 	public Transaction(LocalDateTime date, double amount, Operation type) {
@@ -64,7 +64,7 @@ public class Transaction implements Comparable<Transaction> {
 	
 
 	
-	@Override
+	
 	public int compareTo(Transaction tr1) {
 		
 		
